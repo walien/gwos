@@ -6,7 +6,7 @@ The system is modular and proposes standard features (availables in UNIX-like OS
 - Event-based communication system
 - Shell (bash-like)
 - Process Management
-- Standalone application with access control
+- Standalone applications sets
 - Server-side file system
 - Desktop with (tiny) customizations
 
