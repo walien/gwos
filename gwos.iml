@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="web" name="Web">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/war/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/war" relative="/" />
+        </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/mod-apps" />
+          <root url="file://$MODULE_DIR$/mod-common" />
+          <root url="file://$MODULE_DIR$/mod-doc" />
+          <root url="file://$MODULE_DIR$/mod-kernel" />
+          <root url="file://$MODULE_DIR$/mod-services" />
+          <root url="file://$MODULE_DIR$/mod-session" />
+          <root url="file://$MODULE_DIR$/mod-ui" />
+        </sourceRoots>
+      </configuration>
+    </facet>
+    <facet type="gwt" name="GWT">
+      <configuration>
+        <setting name="compilerMaxHeapSize" value="256" />
+        <setting name="gwtScriptOutputStyle" value="DETAILED" />
+        <setting name="gwtSdkUrl" value="file://$MODULE_DIR$/../../../libs/gwt-2.2.0" />
+        <setting name="webFacet" value="Web" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/mod-apps" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/mod-common" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/mod-doc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/mod-kernel" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/mod-services" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/mod-session" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/mod-ui" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/mod-main" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/gxt-2.2.5-gwt22.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="gwt-user" level="project" />
+    <orderEntry type="library" name="commons-io-2.4" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-5.0.8-bin" level="project" />
+    <orderEntry type="library" name="gxt-2.2.5-gwt22" level="project" />
+  </component>
+</module>
+

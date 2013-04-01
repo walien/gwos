@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2013 - Elian ORIOU
+  ~
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  -->
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5" xmlns="http://java.sun.com/xml/ns/javaee">
+
+	<!-- Global App Parameters -->
+
+	<context-param>
+		<param-name>gwos.fs.path</param-name>
+		<param-value>/file_system</param-value>
+	</context-param>
+	<context-param>
+		<param-name>gwos.db.url</param-name>
+		<param-value>jdbc:mysql://localhost:3306/gwos</param-value>
+	</context-param>
+	<context-param>
+		<param-name>gwos.db.login</param-name>
+		<param-value>root</param-value>
+	</context-param>
+	<context-param>
+		<param-name>gwos.db.pass</param-name>
+		<param-value>root</param-value>
+	</context-param>
+
+	<!-- Servlets -->
+
+	<!-- SessionService Configuration -->
+	<servlet>
+		<servlet-name>SessionService</servlet-name>
+		<servlet-class>com.gwos.server.services.SessionServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SessionService</servlet-name>
+		<url-pattern>/gwos/SessionService</url-pattern>
+	</servlet-mapping>
+
+	<!-- FileSystemService Configuration -->
+	<servlet>
+		<servlet-name>FileSystemService</servlet-name>
+		<servlet-class>com.gwos.server.services.FileSystemServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FileSystemService</servlet-name>
+		<url-pattern>/gwos/FileSystemService</url-pattern>
+	</servlet-mapping>
+
+	<!-- AppsService Configuration -->
+	<servlet>
+		<servlet-name>AppsService</servlet-name>
+		<servlet-class>com.gwos.server.services.AppsServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AppsService</servlet-name>
+		<url-pattern>/gwos/AppsService</url-pattern>
+	</servlet-mapping>
+
+	<!-- Default page to serve -->
+	<welcome-file-list>
+		<welcome-file>Gwos.html</welcome-file>
+	</welcome-file-list>
+
+</web-app>

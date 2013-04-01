@@ -1,3 +1,7 @@
+# IDEA file
+.idea
+
+# Java Classes #
 *.class
 
 # Package Files #
