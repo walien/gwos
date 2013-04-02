@@ -53,9 +53,9 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="gwt-user" level="project" />
-    <orderEntry type="library" name="commons-io-2.4" level="project" />
-    <orderEntry type="library" name="mysql-connector-java-5.0.8-bin" level="project" />
-    <orderEntry type="library" name="gxt-2.2.5-gwt22" level="project" />
+    <orderEntry type="library" name="com.extjs:gxt:2.2.4" level="project" />
+    <orderEntry type="library" name="commons-io:commons-io:2.4" level="project" />
+    <orderEntry type="library" name="mysql:mysql-connector-java:5.0.8" level="project" />
   </component>
 </module>
 
