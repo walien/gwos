@@ -23,7 +23,6 @@ import com.gwos.client.core.filesystem.FileSystemManager;
 import com.gwos.client.core.process.SystemProcessManager;
 import com.gwos.client.packets.AppsManager;
 import com.gwos.client.services.ServiceBundle;
-import com.gwos.client.tests.AppInitializer;
 import com.gwos.client.ui.auth.AuthenticationScreen;
 import com.gwos.client.ui.desktop.GwosDesktop;
 

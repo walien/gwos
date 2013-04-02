@@ -1,6 +1,5 @@
 # IDEA file
 .idea
-*.iml
 
 # Java Classes #
 *.class

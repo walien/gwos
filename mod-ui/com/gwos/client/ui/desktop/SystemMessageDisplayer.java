@@ -24,32 +24,32 @@ import com.gwos.client.core.events.SystemMessageHandler;
 
 public class SystemMessageDisplayer {
 
-	public static void listenToMessages() {
+    public static void listenToMessages() {
 
-		SystemEventManager.getInstance().addEventHandler(
-				SystemMessageEvent.TYPE, new SystemMessageHandler() {
+        SystemEventManager.getInstance().addEventHandler(
+                SystemMessageEvent.TYPE, new SystemMessageHandler() {
 
-					@Override
-					public void onSystemMessageEvent(SystemMessageEvent event) {
+            @Override
+            public void onSystemMessageEvent(SystemMessageEvent event) {
 
-						GwosLogger.getLogger().warning(
-								"SystemMessage (" + event.getMessageType()
-										+ ") : " + event.getMessage());
+                GwosLogger.getLogger().warning(
+                        "SystemMessage (" + event.getMessageType()
+                                + ") : " + event.getMessage());
 
-						switch (event.getSource()) {
-						case NON_UI_APP:
-							return;
-						}
-						switch (event.getMessageType()) {
-						case RIGHTS_VIOLATION:
-						case FS_ERROR:
-						case INVALID_ARG:
-							MessageBox.alert("Error !", event.getMessage(),
-									null);
-							break;
-						}
-					}
-				});
-	}
+                switch (event.getSource()) {
+                    case NON_UI_APP:
+                        return;
+                }
+                switch (event.getMessageType()) {
+                    case RIGHTS_VIOLATION:
+                    case FS_ERROR:
+                    case INVALID_ARG:
+                        MessageBox.alert("Error !", event.getMessage(),
+                                null);
+                        break;
+                }
+            }
+        });
+    }
 
 }
