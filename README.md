@@ -13,6 +13,8 @@ The system is modular and proposes standard features (availables in UNIX-like OS
 - Server-side file system
 - Desktop with (tiny) customizations
 
+A demo is available here : http://goo.gl/7iJG1 (user : 'test' / pass : 'test'). 
+
 
 Preview
 --------
